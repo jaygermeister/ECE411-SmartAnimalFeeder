@@ -27,6 +27,19 @@ Competitively priced compared to standard automatic pet feeders, making it acces
 
 # Requirements
 
+Musts:
+- Must dispense food 
+- Must use RF ID technology
+
+Shoulds:
+- Should dispense food at user defined times
+
+Mays:
+- May control portion size
+- May be controlled remotely
+- May notify the user that it's running out of food
+- May dispense two or three different foods
+
 # System Architecture
 
 # Design Specification
