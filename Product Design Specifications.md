@@ -41,6 +41,7 @@ Mays:
 - May dispense two or three different foods
 
 # System Architecture
+![feeder](https://github.com/jaygermeister/ECE411-SmartAnimalFeeder/assets/92325828/404a0b70-f344-4c4f-bc5a-58c44faa9f1d)
 
 - **Level 0 Block Diagram:** <br />
   ![block0](https://github.com/jaygermeister/ECE411-SmartAnimalFeeder/assets/60197935/2b320706-c301-44b4-8e46-57d06b2a8acf)
