@@ -42,6 +42,12 @@ Mays:
 
 # System Architecture
 
+- **Level 0 Block Diagram:**
+  ![block0](https://github.com/jaygermeister/ECE411-SmartAnimalFeeder/assets/60197935/2b320706-c301-44b4-8e46-57d06b2a8acf)
+
+- **Level 1 Block Diagram:**
+  ![block1](https://github.com/jaygermeister/ECE411-SmartAnimalFeeder/assets/60197935/bdcdb152-4869-4439-894a-53dde681a13f)
+
 # Smart Animal Feeder with RFID - Design Specification
 
 ## Technical Details
