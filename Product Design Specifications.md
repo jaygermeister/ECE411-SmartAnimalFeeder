@@ -42,7 +42,6 @@ Mays:
 
 # System Architecture
 
-# Design Specification
 # Smart Animal Feeder with RFID - Design Specification
 
 ## Technical Details
