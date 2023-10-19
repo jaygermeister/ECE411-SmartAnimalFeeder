@@ -42,6 +42,57 @@ Mays:
 
 # System Architecture
 
-# Design Specification
+# Smart Animal Feeder with RFID - Design Specification
 
-# Misc Notes
+## Technical Details
+
+- **Sensor:**
+  - RFID reader for pet identification
+  - Infrared or pressure sensors for detecting pet presence near the bowl
+
+- **Processor:**
+  - Microcontroller unit (MCU), such as Arduino or other microcontroller with RFID and sensor support
+
+- **Actuator:**
+  - Motorized dispenser for releasing pet food
+  - Bowl sealing mechanism with controlled movement
+
+- **Power:**
+  - DC power supply or battery pack, depending on the intended use and location
+
+- **Mechanical Design:**
+  - Hopper or container for storing pet food
+  - Dispenser mechanism with a motor to control food release
+  - RFID tag reader positioned at the entrance for pet identification
+  - Safety shields and barriers to prevent pet access to moving parts
+
+- **Firmware:**
+  - Code to control RFID reading, food dispensing, and communication with other components
+  - Safety algorithms for controlled bowl sealing and emergency stop
+
+- **Arduino or No Arduino:**
+  - The choice depends on the specific requirements; Arduino for simplicity, dedicated microcontroller for more control
+
+- **Development Environment:**
+  - Arduino IDE or suitable IDE for the chosen microcontroller
+  - RFID library for reading RFID tags
+  - Motor control libraries (if using a motorized dispenser)
+
+- **Communication (Optional):**
+  - Options like Bluetooth, Wi-Fi, or other wireless protocols for remote monitoring or control
+
+- **User Interface (Optional):**
+  - LEDs, buttons, or a small display for basic user interaction
+    or 
+  - Phone interface over Wifi or other wireless protocol 
+
+## Safety Features
+
+- **Bowl Sealing Mechanism:**
+  - Sensors to detect the presence of the pet near the bowl
+  - Safety sensor to detect if anything is obstructing sealing mechanism before engaging
+  - Emergency stop mechanism for manual or automatic activation in case of malfunction
+  - Slow and smooth movement to avoid startling or harming the pet
+  - Physical barriers/shields to prevent pet access to moving parts
+
+These safety features aim to ensure the well-being of the pet and enhance the overall reliability of the smart animal feeder.
