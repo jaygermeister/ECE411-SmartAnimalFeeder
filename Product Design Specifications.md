@@ -41,6 +41,7 @@ Mays:
 - May dispense two or three different foods
 
 # System Architecture
+![feeder](https://github.com/jaygermeister/ECE411-SmartAnimalFeeder/assets/92325828/404a0b70-f344-4c4f-bc5a-58c44faa9f1d)
 
 # Smart Animal Feeder with RFID - Design Specification
 
