@@ -51,7 +51,7 @@ Mays:
   - Infrared or pressure sensors for detecting pet presence near the bowl
 
 - **Processor:**
-  - Microcontroller unit (MCU), such as Arduino or a dedicated microcontroller with RFID and sensor support
+  - Microcontroller unit (MCU), such as Arduino or other microcontroller with RFID and sensor support
 
 - **Actuator:**
   - Motorized dispenser for releasing pet food
@@ -68,8 +68,6 @@ Mays:
 
 - **Firmware:**
   - Code to control RFID reading, food dispensing, and communication with other components
-  - Logic for handling multiple pets (if applicable)
-  - Low-power modes to conserve energy when not in use
   - Safety algorithms for controlled bowl sealing and emergency stop
 
 - **Arduino or No Arduino:**
@@ -85,18 +83,16 @@ Mays:
 
 - **User Interface (Optional):**
   - LEDs, buttons, or a small display for basic user interaction
-
-- **Security Measures:**
-  - Secure protocols for RFID communication to prevent unauthorized access
+    or 
+  - Phone interface over Wifi or other wireless protocol 
 
 ## Safety Features
 
 - **Bowl Sealing Mechanism:**
   - Sensors to detect the presence of the pet near the bowl
-  - Safety delay or countdown before sealing mechanism engages
+  - Safety sensor to detect if anything is obstructing sealing mechanism before engaging
   - Emergency stop mechanism for manual or automatic activation in case of malfunction
   - Slow and smooth movement to avoid startling or harming the pet
-  - Physical barriers and shields to prevent pet access to moving parts
-  - Regular testing and calibration of sensors and safety mechanisms
+  - Physical barriers/shields to prevent pet access to moving parts
 
 These safety features aim to ensure the well-being of the pet and enhance the overall reliability of the smart animal feeder.
