@@ -1,0 +1,44 @@
+const int JST_SIG = A3;
+const int en_b = 8;
+const int in4 = 7;
+const int in3 = 6;
+
+unsigned long motorDriveTime = 4000; // Motor drive time for one detection (4 seconds)
+bool motorRunning = false;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(JST_SIG, INPUT);
+  pinMode(en_b, OUTPUT);
+  pinMode(in4, OUTPUT);
+  pinMode(in3, OUTPUT);
+}
+
+void loop() {
+  int JST_SIG_state = digitalRead(JST_SIG);
+
+  if (JST_SIG_state == HIGH && !motorRunning) {
+    Serial.println("JST_SIG is HIGH");
+    digitalWrite(en_b, HIGH); // Set en_b to HIGH
+    digitalWrite(in4, LOW); // Set direction or control pins accordingly
+    digitalWrite(in3, HIGH);
+
+    delay(motorDriveTime); // Motor runs for specified time 
+
+    digitalWrite(en_b, LOW); // Turn off the motor
+    digitalWrite(in4, LOW);
+    digitalWrite(in3, LOW);
+    Serial.println("Motor OFF");
+
+    motorRunning = true; // Set motorRunning to true
+  } else if (JST_SIG_state == LOW && motorRunning) {
+    digitalWrite(en_b, LOW); // Turn off the motor if JST_SIG is LOW
+    digitalWrite(in4, LOW);
+    digitalWrite(in3, LOW);
+    Serial.println("Motor OFF");
+    motorRunning = false; // Set motorRunning to false
+  }
+
+  delay(100); // Small delay for stability
+}
