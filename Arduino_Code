@@ -1,3 +1,5 @@
+#include <TimeLib.h> // Include the Time library
+
 const int JST_SIG = A3;
 const int en_b = 8;
 const int in4 = 7;
@@ -13,9 +15,13 @@ void setup() {
   pinMode(en_b, OUTPUT);
   pinMode(in4, OUTPUT);
   pinMode(in3, OUTPUT);
+// setTime(17, 0, 0, 1, 1, 2023); // Set the initial time (5:00:00 PM, January 1, 2023)
 }
 
 void loop() {
+// Development code for adding time windows
+// if (hour() == 17) {} // Check if the current hour is 5 PM     
+
   int JST_SIG_state = digitalRead(JST_SIG);
 
   if (JST_SIG_state == HIGH && !motorRunning) {
@@ -39,6 +45,8 @@ void loop() {
     Serial.println("Motor OFF");
     motorRunning = false; // Set motorRunning to false
   }
-
+//else {
+    // If it's not between 5 PM and 6 PM, we might want to turn off the motor or perform other actions
+//  }
   delay(100); // Small delay for stability
 }
